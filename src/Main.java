@@ -28,8 +28,8 @@ public class Main {
         myRecursiveTask2.fork();
 
 
-        Object o1 = myRecursiveTask1.get();
-        Object o2 = myRecursiveTask2.get();
+        Object o1 = myRecursiveTask1.join();
+        Object o2 = myRecursiveTask2.join();
         System.out.println("o1="+o1);
         System.out.println("o2="+o2);
         long end = System.currentTimeMillis();
