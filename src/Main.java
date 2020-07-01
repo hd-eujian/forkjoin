@@ -17,7 +17,7 @@ public class Main {
         System.out.println("o1="+o1);
         System.out.println("o2="+o2);
         long end = System.currentTimeMillis();
-        System.out.println(end-begin);
+        System.out.println("normal总用时:"+(end-begin));
     }
 
     private static void forkJoin() throws Exception{
@@ -33,6 +33,6 @@ public class Main {
         System.out.println("o1="+o1);
         System.out.println("o2="+o2);
         long end = System.currentTimeMillis();
-        System.out.println(end-begin);
+        System.out.println("forkJoin总用时:"+(end-begin));
     }
 }
